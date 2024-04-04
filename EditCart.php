@@ -17,5 +17,6 @@ if (isset($_SESSION['Cart'])) {
     }
     $_SESSION['Cart']=serialize($cart);
     echo '<script type="text/javascript"> window.location="ShowCart.php";</script>';
+    include('ViewCart.php');
 }
 ?>

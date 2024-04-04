@@ -14,7 +14,7 @@ if(isset($_SESSION['Cart']))
     }
     echo '</tr>';
     foreach($items as $id=>$value){
-        echo 'tr>';
+        echo '<tr>';
         echo '<td>'.$value->GetTen().'</td>';
         echo '<td style="text-algin:right">'.$value->getGia().'</td>';
         echo '<td style="text-algin:right">'.$value->getSL().'</td>';
@@ -26,7 +26,7 @@ if(isset($_SESSION['Cart']))
             <a href="EditCart.php?type=2&id='.$id.'">Xóa</a>
             </td>
         ';
-        echo '<tr style="text-algin:right">'.$t.'</td>';
+        echo '<td style="text-algin:right">'.$t.'</td>';
         echo '</tr>';
     }
     echo '<tr><td></td>
